@@ -22,6 +22,8 @@ for (int i = 0; i < mass.GetLength(1); i++)
     save = mass[0,i];
     mass[0,i] = mass[mass.GetLength(0) - 1, i];
     mass[mass.GetLength(0) - 1, i]=save;
+    // System.Console.Write(mass[0, i] + " ");
+    // System.Console.Write(mass[mass.GetLength(0) - 1, i] + " ");
 }
 for (int i = 0; i < mass.GetLength(0); i++)
 {
